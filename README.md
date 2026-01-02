@@ -18,10 +18,11 @@ This project demonstrates the **end-to-end data pipeline**: from messy source da
 <pre>
 bitsom_ba_25071687-fleximart-data-architecture/
 │
-├── README.md                          # Root documentation
-├── .gitignore                         # Ignore unnecessary files
+├── README.md                         # Root documentation 
+├── .gitignore                        # Ignore unnecessary files 
+├── pytest.ini                        # Global test configuration
 │
-├── data/                              # Input data files (provided)
+├── data/                             # Input data files (provided)
 │   ├── customers_raw.csv
 │   ├── products_raw.csv
 │   └── sales_raw.csv
@@ -41,11 +42,21 @@ bitsom_ba_25071687-fleximart-data-architecture/
 │   └── products_catalog.json
 │
 └── part3-datawarehouse/
-├── README.md                          # Part 3 overview
-├── star_schema_design.md
-├── warehouse_schema.sql
-├── warehouse_data.sql
-└── analytics_queries.sql
+│   ├── README.md                        # Part 3 overview 
+│   ├── star_schema_design.md 
+│   ├── warehouse_schema.sql 
+│   ├── warehouse_data.sql 
+│   └── analytics_queries.sql
+├── tests/                          # All test files here
+│   ├── test_etl.py                 # ETL pipeline tests
+│   ├── test_nosql.py               # NoSQL sanity checks
+│   └── test_warehouse.py           # Warehouse schema checks
+│
+└── output/                         # Sample outputs and reports 
+    ├── monthly_sales_output.csv 
+    ├── top_products_output.csv 
+    ├── customer_segments_output.csv 
+    └── etl_log.txt
 </pre>
 ---
 
