@@ -83,32 +83,31 @@ bitsom_ba_25071687-fleximart-data-architecture/
    - Dimension tables: `dim_customers`, `dim_products`, `dim_date`  
    - Analytical reports (e.g., monthly revenue trends, product category performance)
 
-6. ## 🛠️ Tech Stack
+6. **🛠️ Tech Stack**  
    - **Languages:** Python (ETL scripts), SQL  
    - **Databases:** PostgreSQL / MySQL, MongoDB  
    - **Data Warehouse:** Star Schema design  
    - **Tools:** psycopg2 / SQLAlchemy, Pandas, ERD tools
 
-7. ## 🚀 Setup Instructions
-   
-     **MySQL**   
-       mysql -u root -p -e "CREATE DATABASE fleximart;"         
-       mysql -u root -p -e "CREATE DATABASE fleximart_dw;"          
-       mysql -u root -p fleximart < part1-database-etl/business_queries.sql        
-       mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql        
-       mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql       
-       mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql       
+7. **🚀 Setup Instructions**  
+      **MySQL**    
+        mysql -u root -p -e "CREATE DATABASE fleximart;"         
+        mysql -u root -p -e "CREATE DATABASE fleximart_dw;"          
+        mysql -u root -p fleximart < part1-database-etl/business_queries.sql        
+        mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql        
+        mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql       
+        mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql       
 
-     **MongoDB**      
-       mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json      
-       mongo < part2-nosql/mongodb_operations.py      
+      **MongoDB**       
+        mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json      
+        mongo < part2-nosql/mongodb_operations.py      
 
-     **Python**      
-       pip install -r part1-database-etl/requirements.txt      
-       python part1-database-etl/etl_pipeline.py     
-       pytest tests/ -v       
+      **Python**       
+        pip install -r part1-database-etl/requirements.txt      
+        python part1-database-etl/etl_pipeline.py     
+        pytest tests/ -v       
 
-8. ## Challenges Faced   
+8. **Challenges Faced**   
    - Foreign Key Constraint Errors  
      Challenge: Fact table inserts failed due to missing dimension keys.
      Solution: Modified schema to use manual surrogate keys and reloaded dimensions before facts.
@@ -117,7 +116,7 @@ bitsom_ba_25071687-fleximart-data-architecture/
      Challenge: Re-running inserts created duplicate rows in dimension tables.
      Solution: Used TRUNCATE with foreign key checks disabled to reset tables before reloads.
 
-9. ## Key Learnings
+9. **Key Learnings**   
    Through this project, I learned how to:
    -  Design modular ETL pipelines for relational databases.
    -  Enforce schema integrity and troubleshoot foreign key constraints.
@@ -125,7 +124,7 @@ bitsom_ba_25071687-fleximart-data-architecture/
    -  Integrate relational and NoSQL systems for flexible analytics.
    -  Validate data quality and write analytical SQL queries to support business decision-making.
 
-10. ## Deliverables
+10. **Deliverables**   
    -  Part 1: ETL pipeline, schema documentation, business queries, data quality report.
    -  Part 2: NoSQL analysis, MongoDB operations, product catalog JSON.
    -  Part 3: Star schema design, warehouse schema/data, OLAP queries with sample outputs.
