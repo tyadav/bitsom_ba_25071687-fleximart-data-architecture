@@ -5,11 +5,10 @@
 **Email:** tej.yadav@yahoo.com
 **Date:** Jan 2nd, 2026  
 </pre>
-# BITSoM_Project
+## 📌 Overview
 This project implements a complete data architecture for FlexiMart, covering ETL pipelines, NoSQL analysis, and a star-schema data warehouse. It demonstrates how raw operational data can be transformed into business-ready insights, with clear documentation, reproducible scripts, and OLAP queries for analytics.
 
 # FlexiMart Data Engineering Pipeline
-## 📌 Overview
 FlexiMart is an e-commerce company aiming to build a robust analytics system from raw CSV files.  
 This project demonstrates the **end-to-end data pipeline**: from messy source data to a clean relational database, NoSQL analysis, and a star-schema data warehouse.
 
@@ -92,7 +91,6 @@ bitsom_ba_25071687-fleximart-data-architecture/
 
 7. ## 🚀 Setup Instructions 
    ### MySQL
-    ```bash
     mysql -u root -p -e "CREATE DATABASE fleximart;"
     mysql -u root -p -e "CREATE DATABASE fleximart_dw;"
     mysql -u root -p fleximart < part1-database-etl/business_queries.sql
