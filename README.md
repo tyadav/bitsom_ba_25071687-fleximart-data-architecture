@@ -91,7 +91,7 @@ bitsom_ba_25071687-fleximart-data-architecture/
 
 7. ## 🚀 Setup Instructions
    
-  **MySQL**
+  **MySQL**   
     mysql -u root -p -e "CREATE DATABASE fleximart;"   
     mysql -u root -p -e "CREATE DATABASE fleximart_dw;"     
     mysql -u root -p fleximart < part1-database-etl/business_queries.sql     
@@ -99,11 +99,11 @@ bitsom_ba_25071687-fleximart-data-architecture/
     mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql    
     mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql    
 
-  **MongoDB** 
+  **MongoDB**   
     mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json
     mongo < part2-nosql/mongodb_operations.py
 
-  **Python** 
+  **Python**    
     pip install -r part1-database-etl/requirements.txt
     python part1-database-etl/etl_pipeline.py
     pytest tests/ -v
