@@ -91,24 +91,24 @@ bitsom_ba_25071687-fleximart-data-architecture/
 
 7. ## 🚀 Setup Instructions
    
-  **MySQL**   
-    mysql -u root -p -e "CREATE DATABASE fleximart;"        
-    mysql -u root -p -e "CREATE DATABASE fleximart_dw;"         
-    mysql -u root -p fleximart < part1-database-etl/business_queries.sql       
-    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql       
-    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql      
-    mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql      
+    **MySQL**   
+      mysql -u root -p -e "CREATE DATABASE fleximart;"         
+      mysql -u root -p -e "CREATE DATABASE fleximart_dw;"          
+      mysql -u root -p fleximart < part1-database-etl/business_queries.sql        
+      mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql        
+      mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql       
+      mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql       
 
-  **MongoDB**     
-    mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json     
-    mongo < part2-nosql/mongodb_operations.py     
+    **MongoDB**      
+      mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json      
+      mongo < part2-nosql/mongodb_operations.py      
 
-  **Python**     
-    pip install -r part1-database-etl/requirements.txt     
-    python part1-database-etl/etl_pipeline.py    
-    pytest tests/ -v     
+    **Python**      
+      pip install -r part1-database-etl/requirements.txt      
+      python part1-database-etl/etl_pipeline.py     
+      pytest tests/ -v       
 
-8. ## Challenges Faced  
+8. ## Challenges Faced   
    - Foreign Key Constraint Errors  
      Challenge: Fact table inserts failed due to missing dimension keys.
      Solution: Modified schema to use manual surrogate keys and reloaded dimensions before facts.
