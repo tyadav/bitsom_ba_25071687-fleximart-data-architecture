@@ -1,9 +1,9 @@
 # FlexiMart Data Architecture Project
 <pre>
-### Student Name: Tej Yadav  
-- Student ID: BITSOM_BA_25071687 
-- Email: tej.yadav@yahoo.com
-- Date: Jan 2nd, 2026  
+ - Student Name: Tej Yadav  
+ - Student ID: BITSOM_BA_25071687 
+ - Email: tej.yadav@yahoo.com
+ - Date: Jan 2nd, 2026  
 </pre>
 ## 📌 Overview
 This project implements a complete data architecture for FlexiMart, covering ETL pipelines, NoSQL analysis, and a star-schema data warehouse. It demonstrates how raw operational data can be transformed into business-ready insights, with clear documentation, reproducible scripts, and OLAP queries for analytics.
