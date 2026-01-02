@@ -1,0 +1,17 @@
+Data Quality Report
+-------------------
+Customers processed: 26
+Customers duplicates removed: 5
+Customers missing values handled: 1
+Customers loaded: 20
+
+Products processed: 20
+Products duplicates removed: 0
+Products missing values handled: 3
+Products loaded: 17
+
+Sales processed: 41
+Sales duplicates removed: 1
+Sales missing values handled: 16
+Orders loaded: 25
+Order items loaded: 25

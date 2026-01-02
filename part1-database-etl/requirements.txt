@@ -1,0 +1,6 @@
+pandas==2.2.2
+numpy==1.26.4
+requests==2.32.3
+pytest>=7.0.0
+cryptography>=40.0.0
+pymongo>=4.0.0
