@@ -89,14 +89,15 @@ bitsom_ba_25071687-fleximart-data-architecture/
    - **Data Warehouse:** Star Schema design  
    - **Tools:** psycopg2 / SQLAlchemy, Pandas, ERD tools
 
-7. ## 🚀 Setup Instructions 
+7. ## 🚀 Setup Instructions
+   
    ### MySQL
-    mysql -u root -p -e "CREATE DATABASE fleximart;" 
-    mysql -u root -p -e "CREATE DATABASE fleximart_dw;" 
-    mysql -u root -p fleximart < part1-database-etl/business_queries.sql 
-    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql 
-    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql 
-    mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql 
+    mysql -u root -p -e "CREATE DATABASE fleximart;"   
+    mysql -u root -p -e "CREATE DATABASE fleximart_dw;"     
+    mysql -u root -p fleximart < part1-database-etl/business_queries.sql     
+    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql     
+    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql    
+    mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql    
 
   ### MongoDB 
     mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json
