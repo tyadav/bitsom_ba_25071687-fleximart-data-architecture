@@ -5,15 +5,15 @@
  **Email:** tej.yadav@yahoo.com  
  **Date:** Jan 2nd, 2026  
 
-## 📌 Overview
+**📌 Overview**
 This project implements a complete data architecture for FlexiMart, covering ETL pipelines, NoSQL analysis, and a star-schema data warehouse. It demonstrates how raw operational data can be transformed into business-ready insights, with clear documentation, reproducible scripts, and OLAP queries for analytics.
 
-# FlexiMart Data Engineering Pipeline
+**FlexiMart Data Engineering Pipeline**  
 FlexiMart is an e-commerce company aiming to build a robust analytics system from raw CSV files.  
 This project demonstrates the **end-to-end data pipeline**: from messy source data to a clean relational database, NoSQL analysis, and a star-schema data warehouse.
 
 ---
-## 📂 Repository Structure
+**📂 Repository Structure**  
 <pre>
 bitsom_ba_25071687-fleximart-data-architecture/
 │
@@ -124,9 +124,9 @@ bitsom_ba_25071687-fleximart-data-architecture/
    -  Integrate relational and NoSQL systems for flexible analytics.
    -  Validate data quality and write analytical SQL queries to support business decision-making.
 
-10. **Deliverables**   
-   -  Part 1: ETL pipeline, schema documentation, business queries, data quality report.
-   -  Part 2: NoSQL analysis, MongoDB operations, product catalog JSON.
-   -  Part 3: Star schema design, warehouse schema/data, OLAP queries with sample outputs.
+10. **Deliverables**    
+    -  Part 1: ETL pipeline, schema documentation, business queries, data quality report.
+    -  Part 2: NoSQL analysis, MongoDB operations, product catalog JSON.
+    -  Part 3: Star schema design, warehouse schema/data, OLAP queries with sample outputs.
 
    Documentation: Root README.md and supporting README.md markdown files in each part.
