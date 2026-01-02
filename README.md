@@ -1,10 +1,10 @@
 # FlexiMart Data Architecture Project
-
+<pre>
 **Student Name:** Tej Yadav  
 **Student ID:** BITSOM_BA_25071687 
 **Email:** tej.yadav@yahoo.com
 **Date:** Jan 2nd, 2026  
-
+</pre>
 # BITSoM_Project
 This project implements a complete data architecture for FlexiMart, covering ETL pipelines, NoSQL analysis, and a star-schema data warehouse. It demonstrates how raw operational data can be transformed into business-ready insights, with clear documentation, reproducible scripts, and OLAP queries for analytics.
 
@@ -84,29 +84,30 @@ bitsom_ba_25071687-fleximart-data-architecture/
    - Dimension tables: `dim_customers`, `dim_products`, `dim_date`  
    - Analytical reports (e.g., monthly revenue trends, product category performance)
 
-6. ## Setup Instructions
-   ### Database Setup
-   bash
-   ## Create databases
-      mysql -u root -p -e "CREATE DATABASE fleximart;"
-      mysql -u root -p -e "CREATE DATABASE fleximart_dw;"
-
-   # Run Part 1 - ETL Pipeline
-      python part1-database-etl/etl_pipeline.py
-
-   # Run Part 1 - Business Queries
-      mysql -u root -p fleximart < part1-database-etl/business_queries.sql
-
-   # Run Part 3 - Data Warehouse
-      mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql
-      mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql
-      mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql
-
-7. ## 🛠️ Tech Stack
+6. ## 🛠️ Tech Stack
    - **Languages:** Python (ETL scripts), SQL  
    - **Databases:** PostgreSQL / MySQL, MongoDB  
    - **Data Warehouse:** Star Schema design  
    - **Tools:** psycopg2 / SQLAlchemy, Pandas, ERD tools
+
+7. ## 🚀 Setup Instructions 
+   ### MySQL
+    ```bash
+    mysql -u root -p -e "CREATE DATABASE fleximart;"
+    mysql -u root -p -e "CREATE DATABASE fleximart_dw;"
+    mysql -u root -p fleximart < part1-database-etl/business_queries.sql
+    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql
+    mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql
+    mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql
+
+  ### MongoDB 
+    mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json
+    mongo < part2-nosql/mongodb_operations.py
+
+  ### Python 
+    pip install -r part1-database-etl/requirements.txt
+    python part1-database-etl/etl_pipeline.py
+    pytest tests/ -v
 
 8. ## Challenges Faced
    - Foreign Key Constraint Errors  
