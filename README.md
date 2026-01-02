@@ -99,23 +99,23 @@ bitsom_ba_25071687-fleximart-data-architecture/
     mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql    
     mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql    
 
-  ### MongoDB 
+   ### MongoDB 
     mongoimport --db fleximart --collection products --file part2-nosql/products_catalog.json
     mongo < part2-nosql/mongodb_operations.py
 
-  ### Python 
+   ### Python 
     pip install -r part1-database-etl/requirements.txt
     python part1-database-etl/etl_pipeline.py
     pytest tests/ -v
 
 8. ## Challenges Faced
    - Foreign Key Constraint Errors  
-   Challenge: Fact table inserts failed due to missing dimension keys.
-   Solution: Modified schema to use manual surrogate keys and reloaded dimensions before facts.
+     Challenge: Fact table inserts failed due to missing dimension keys.
+     Solution: Modified schema to use manual surrogate keys and reloaded dimensions before facts.
 
    - Duplicate Data Loads  
-   Challenge: Re-running inserts created duplicate rows in dimension tables.
-   Solution: Used TRUNCATE with foreign key checks disabled to reset tables before reloads.
+     Challenge: Re-running inserts created duplicate rows in dimension tables.
+     Solution: Used TRUNCATE with foreign key checks disabled to reset tables before reloads.
 
 9. ## Key Learnings
    Through this project, I learned how to:
@@ -130,4 +130,4 @@ bitsom_ba_25071687-fleximart-data-architecture/
    -  Part 2: NoSQL analysis, MongoDB operations, product catalog JSON.
    -  Part 3: Star schema design, warehouse schema/data, OLAP queries with sample outputs.
 
-   Documentation: Root README.md and supporting markdown files in /docs.
+   Documentation: Root README.md and supporting README.md markdown files in each part.
