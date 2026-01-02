@@ -1,0 +1,92 @@
+[
+  {
+    "product_id": "ELEC001",
+    "name": "Samsung Galaxy S21",
+    "category": "Electronics",
+    "price": 39999,
+    "stock": 150,
+    "specs": {"ram": "8GB", "storage": "128GB"},
+    "reviews": [{"user": "U001", "rating": 5, "comment": "Great!", "date": "2024-01-15"}]
+  },
+  {
+    "product_id": "ELEC002",
+    "name": "Apple iPhone 13",
+    "category": "Electronics",
+    "price": 59999,
+    "stock": 80,
+    "specs": {"ram": "4GB", "storage": "128GB"},
+    "reviews": [{"user": "U002", "rating": 4, "comment": "Smooth performance", "date": "2024-02-10"}]
+  },
+  {
+    "product_id": "ELEC003",
+    "name": "Dell Inspiron 15",
+    "category": "Electronics",
+    "price": 45999,
+    "stock": 60,
+    "specs": {"ram": "16GB", "processor": "Intel i5"},
+    "reviews": [{"user": "U003", "rating": 3, "comment": "Decent", "date": "2024-03-05"}]
+  },
+  {
+    "product_id": "ELEC004",
+    "name": "Sony WH-1000XM4",
+    "category": "Electronics",
+    "price": 24999,
+    "stock": 120,
+    "specs": {"type": "Over-ear", "noise_cancel": true},
+    "reviews": [{"user": "U004", "rating": 5, "comment": "Excellent ANC", "date": "2024-04-12"}]
+  },
+  {
+    "product_id": "ELEC005",
+    "name": "Logitech MX Master 3",
+    "category": "Electronics",
+    "price": 7999,
+    "stock": 200,
+    "specs": {"dpi": 4000, "connectivity": "Bluetooth"},
+    "reviews": [{"user": "U005", "rating": 4, "comment": "Ergonomic", "date": "2024-05-20"}]
+  },
+  {
+    "product_id": "FASH001",
+    "name": "Nike Air Max",
+    "category": "Fashion",
+    "price": 9999,
+    "stock": 100,
+    "specs": {"size": "UK 9", "color": "Black"},
+    "reviews": [{"user": "U006", "rating": 4, "comment": "Comfortable", "date": "2024-01-25"}]
+  },
+  {
+    "product_id": "FASH002",
+    "name": "Adidas Ultraboost",
+    "category": "Fashion",
+    "price": 12999,
+    "stock": 90,
+    "specs": {"size": "UK 8", "color": "White"},
+    "reviews": [{"user": "U007", "rating": 5, "comment": "Great cushioning", "date": "2024-02-18"}]
+  },
+  {
+    "product_id": "FASH003",
+    "name": "Levi's 511 Jeans",
+    "category": "Fashion",
+    "price": 3499,
+    "stock": 200,
+    "specs": {"size": "32", "color": "Blue"},
+    "reviews": [{"user": "U008", "rating": 3, "comment": "Okay fit", "date": "2024-03-22"}]
+  },
+  {
+    "product_id": "FASH004",
+    "name": "Puma Hoodie",
+    "category": "Fashion",
+    "price": 2999,
+    "stock": 150,
+    "specs": {"size": "L", "color": "Grey"},
+    "reviews": [{"user": "U009", "rating": 4, "comment": "Soft fabric", "date": "2024-04-30"}]
+  },
+  {
+    "product_id": "FASH005",
+    "name": "Ray-Ban Aviators",
+    "category": "Fashion",
+    "price": 7999,
+    "stock": 70,
+    "specs": {"lens": "Polarized", "color": "Gold"},
+    "reviews": [{"user": "U010", "rating": 5, "comment": "Classic style", "date": "2024-05-10"}]
+  }
+]
