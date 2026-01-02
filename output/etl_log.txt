@@ -1,0 +1,6 @@
+2026-01-02 22:30:01 [INFO] ETL pipeline started
+2026-01-02 22:30:02 [INFO] Loaded raw customers data
+2026-01-02 22:30:03 [INFO] Transformed sales data successfully
+2026-01-02 22:30:04 [WARNING] Missing unit_price for product_id=200, filled from products table
+2026-01-02 22:30:05 [INFO] Inserted 40 sales records into fact_sales
+2026-01-02 22:30:06 [INFO] ETL pipeline completed
