@@ -7,7 +7,7 @@ This part explores FlexiMart’s product catalog using MongoDB. It demonstrates 
 
 ## 🔧 Components
 - `nosql_analysis.md` → Explains schema design choices and NoSQL advantages.  
-- `mongodb_operations.js` → Mongo shell script to insert and query product documents.  
+- `mongodb_operations.py` → Mongo shell script to insert and query product documents.  
 - `products_catalog.json` → Sample product data with nested attributes and categories.  
 
 ---
@@ -16,4 +16,5 @@ This part explores FlexiMart’s product catalog using MongoDB. It demonstrates 
 ```bash
 # Load product catalog into MongoDB
 mongosh < mongodb_operations.py
+
 
