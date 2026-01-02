@@ -37,7 +37,7 @@ bitsom_ba_25071687-fleximart-data-architecture/
 ├── part2-nosql/
 │   ├── README.md                      # Part 2 overview
 │   ├── nosql_analysis.md
-│   ├── mongodb_operations.js
+│   ├── mongodb_operations.py
 │   └── products_catalog.json
 │
 └── part3-datawarehouse/
