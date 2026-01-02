@@ -1,6 +1,4 @@
-# 📁 part2-nosql/README.md
-
-## Part 2: NoSQL Product Catalog (MongoDB)
+# Part 2: NoSQL Product Catalog (MongoDB)
 
 ## 📌 Overview
 This part explores FlexiMart’s product catalog using MongoDB. It demonstrates how flexible schemas can support diverse product attributes and dynamic querying.
@@ -18,3 +16,4 @@ This part explores FlexiMart’s product catalog using MongoDB. It demonstrates 
 ```bash
 # Load product catalog into MongoDB
 mongosh < mongodb_operations.py
+
