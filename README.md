@@ -1,8 +1,8 @@
 # FlexiMart Data Architecture Project
 
  **Student Name:** Tej Yadav  
- **Student ID:** BITSOM_BA_25071687 
- **Email:** tej.yadav@yahoo.com
+ **Student ID:** BITSOM_BA_25071687  
+ **Email:** tej.yadav@yahoo.com  
  **Date:** Jan 2nd, 2026  
 
 ## 📌 Overview
