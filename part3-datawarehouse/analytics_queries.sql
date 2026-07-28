@@ -2,7 +2,7 @@ USE fleximart_dw;
 ------------------------------------------------------------
 -- Query 1: Monthly Sales Drill-Down Analysis (5 marks)
 -- Business Scenario: "The CEO wants to see sales performance broken down by time periods.
--- Start with yearly total, then quarterly, then monthly sales for 2024."
+-- Start with yearly total, then quarterly, then monthly sales for 2024"
 -- Demonstrates: Drill-down from Year → Quarter → Month.
 ------------------------------------------------------------
 SELECT
